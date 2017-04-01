@@ -96,7 +96,7 @@ linus在1991年创建开源linux，几年后成立linus社区linus用了两个�
 安装
 Xcode 8.0以后集成 gitbrew instal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git">
+<meta property="og:title" content="Git">
 <meta property="og:url" content="http://jingshuai_blog.com/2015/08/01/git/index.html">
 <meta property="og:site_name" content="执念客">
 <meta property="og:description" content="linus
@@ -107,9 +107,9 @@ linus在1991年创建开源linux，几年后成立linus社区linus用了两个�
 
 安装
 Xcode 8.0以后集成 gitbrew instal">
-<meta property="og:updated_time" content="2017-04-01T08:13:23.000Z">
+<meta property="og:updated_time" content="2017-04-01T08:48:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git">
+<meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="linus
 linus在1991年创建开源linux，几年后成立linus社区linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来linus信仰开源精神
 
@@ -151,7 +151,7 @@ Xcode 8.0以后集成 gitbrew instal">
 
 
 
-  <title> git | 执念客 </title>
+  <title> Git | 执念客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -355,7 +355,7 @@ Xcode 8.0以后集成 gitbrew instal">
             
             
               
-                git
+                Git
               
             
           </h1>
@@ -429,27 +429,42 @@ Xcode 8.0以后集成 gitbrew instal">
 
       
         <hr>
-<h4 id="linus"><a href="#linus" class="headerlink" title="linus"></a>linus</h4><blockquote>
+<h3 id="linus"><a href="#linus" class="headerlink" title="linus"></a>linus</h3><blockquote>
 <p>linus在1991年创建开源linux，几年后成立linus社区<br>linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来<br>linus信仰开源精神</p>
 </blockquote>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><blockquote>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><blockquote>
 <p>远程仓库至少有两个分支master、dev,本地仓库至少有三个分支master、dev、mine<br>在mine分支中开发、合并到dev分支、并推送到远程仓库</p>
 </blockquote>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote>
 <p>Xcode 8.0以后集成 git<br><code>brew install git</code></p>
 </blockquote>
-<h4 id="关联本地与远程仓库"><a href="#关联本地与远程仓库" class="headerlink" title="关联本地与远程仓库"></a>关联本地与远程仓库</h4><blockquote>
+<h3 id="关联本地与远程仓库"><a href="#关联本地与远程仓库" class="headerlink" title="关联本地与远程仓库"></a>关联本地与远程仓库</h3><blockquote>
 <p>在github或者coding或者其它创建仓库<br>git clone <respository url=""><br>git push -u origin dev<br>若没有关联、推送不成功、根据不成功的提示进行关联</respository></p>
 </blockquote>
-<h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><blockquote>
-<h5 id="主要命令"><a href="#主要命令" class="headerlink" title="主要命令:"></a>主要命令:</h5><p>从远程仓库某分支拉取项目<br><code>git pull origin master</code></p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令:"></a>常用命令:</h3><blockquote>
+<p>从远程仓库某分支拉取项目<br><code>git pull origin master</code></p>
 <p>查看当前分支<br><code>git branch</code><br>创建dev分支并与远程仓库dev分支关联<br>切换并创建工作分支<br><code>git checkout -b mine</code></p>
 <p>查看仓库当前状态<br><code>git status</code><br>对比文件修改前后<br><code>git diff &lt;fileName&gt;</code></p>
 <p>把修改文件添加到暂存区<br><code>git add &lt;fileName&gt;</code><br>放弃添加到暂存区<br><code>git checkout -- &lt;fileName&gt;</code></p>
 <p>把暂存区中内容提交到本地仓库<br><code>git commit -m &quot;说明&quot;</code></p>
 <p>切换到dev分支<br><code>git checkout dev</code><br>合并到本地仓库dev分支<br><code>git merge</code></p>
-<p>版本恢复<br><code>git reset --hard &lt;commit_id&gt;</code><br>把本地仓库内容提交到远程仓库(推送前拉取)<br><code>git push origin dev</code></p>
-<h5 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h5><p>查看历史命令<br><code>git reflog</code><br>`</p>
+<p>版本恢复<br><code>git reset --hard &lt;commit_id&gt;</code><br><code>git reset --hard HEAD^</code><br><code>git reset --hard HEAD^^</code><br>把本地仓库内容提交到远程仓库(推送前拉取)<br><code>git push origin dev</code></p>
+</blockquote>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签:"></a>标签:</h3><blockquote>
+<p>创建标签<br><code>git tag v1.0</code><br><code>git tag -a v1.0 -m &quot;version 1.0 release&quot;</code><br>为特定commit_id创建标签<br><code>git tag -a v1.0 -m &quot;version 1.0 release&quot; commit_id</code></p>
+<p>查看所有标签<br><code>git tag</code><br>查看标签下的内容<br><code>git show v1.0</code></p>
+<p>删除标签<br><code>git tag -d v1.0</code><br><code>git push origin :refs/tags/v1.0</code></p>
+<p>推送标签<br><code>git push origin v1.0</code><br><code>git push origin --tags</code></p>
+</blockquote>
+<h3 id="stash"><a href="#stash" class="headerlink" title="stash:"></a>stash:</h3><blockquote>
+<p>隐藏当前工作区内容<br><code>git stash</code></p>
+<p>查看隐藏工作区状态<br><code>git stash list</code></p>
+<p>恢复隐藏的工作区<br><code>git stash apply</code><br><code>git stash pop</code> </p>
+</blockquote>
+<h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h3><blockquote>
+<p>查看历史命令<br><code>git reflog</code><br><code>git log</code></p>
+<p>删除工作区文件<br><code>git rm &lt;fileName&gt;</code></p>
+<p>查看远程仓库信息<br><code>git remote</code></p>
 </blockquote>
 
       
@@ -634,7 +649,7 @@ Xcode 8.0以后集成 gitbrew instal">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#linus"><span class="nav-number">1.</span> <span class="nav-text">linus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联本地与远程仓库"><span class="nav-number">4.</span> <span class="nav-text">关联本地与远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令"><span class="nav-number">5.</span> <span class="nav-text">命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#主要命令"><span class="nav-number">5.1.</span> <span class="nav-text">主要命令:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他命令"><span class="nav-number">5.2.</span> <span class="nav-text">其他命令:</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#linus"><span class="nav-number">1.</span> <span class="nav-text">linus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联本地与远程仓库"><span class="nav-number">4.</span> <span class="nav-text">关联本地与远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">5.</span> <span class="nav-text">常用命令:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签"><span class="nav-number">6.</span> <span class="nav-text">标签:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他命令"><span class="nav-number">8.</span> <span class="nav-text">其他命令:</span></a></li></ol></div>
             
 
           </div>

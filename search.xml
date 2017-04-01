@@ -17,15 +17,15 @@
 
     
     <entry>
-      <title><![CDATA[test1]]></title>
-      <url>%2F2017%2F03%2F31%2Ftest1%2F</url>
+      <title><![CDATA[deploy_django]]></title>
+      <url>%2F2017%2F03%2F31%2Fdeploy-django%2F</url>
       <content type="text"></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[deploy_django]]></title>
-      <url>%2F2017%2F03%2F31%2Fdeploy-django%2F</url>
+      <title><![CDATA[test1]]></title>
+      <url>%2F2017%2F03%2F31%2Ftest1%2F</url>
       <content type="text"></content>
     </entry>
 

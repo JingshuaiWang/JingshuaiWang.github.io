@@ -9,6 +9,13 @@
     </entry>
 
     
+    <entry>
+      <title><![CDATA[Hexo搭建技术博客]]></title>
+      <url>%2F2015%2F05%2F01%2FHexo%2F</url>
+      <content type="text"><![CDATA[什么是Hexo?1hexo是一个快速、简洁且高效的博客框架、，支持Markdown解析与渲染文章，用Node.js编写。 安装hexo123brew install nodebrew install gitnpm install -g hexo-cli 建站123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 部署 发布123hexo cleanhexo generatehexo deploy 参考资料hoex官方网站]]></content>
+    </entry>
+
+    
   
   
 </search>

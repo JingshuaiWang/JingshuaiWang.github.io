@@ -3,16 +3,16 @@
   
     
     <entry>
-      <title><![CDATA[Hexo搭建技术博客]]></title>
-      <url>%2F2017%2F04%2F01%2FHexo%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%2F</url>
-      <content type="text"><![CDATA[什么是HEXO?1hexo是一个快速、简洁且高效的博客框架、，支持Markdown解析与渲染文章，用Node.js编写。 安装hexo123brew install nodebrew install gitnpm install -g hexo-cli 建站123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 部署 发布123hexo cleanhexo generatehexo deploy 参考资料hoex官方网站]]></content>
+      <title><![CDATA[Git]]></title>
+      <url>%2F2015%2F06%2F01%2Fgit%2F</url>
+      <content type="text"><![CDATA[linus linus在1991年创建开源linux，几年后成立linus社区linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来linus信仰开源精神 分支 远程仓库至少有两个分支master、dev,本地仓库至少有三个分支master、dev、mine在mine分支中开发、合并到dev分支、并推送到远程仓库 安装 Xcode 8.0以后集成 gitbrew install git 关联本地与远程仓库 在github或者coding或者其它创建仓库git clone git push -u origin dev若没有关联、推送不成功、根据不成功的提示进行关联 常用命令: 从远程仓库某分支拉取项目git pull origin master 查看当前分支git branch创建dev分支并与远程仓库dev分支关联切换并创建工作分支git checkout -b mine 查看仓库当前状态git status对比文件修改前后git diff &lt;fileName&gt; 把修改文件添加到暂存区git add &lt;fileName&gt;放弃添加到暂存区git checkout -- &lt;fileName&gt; 把暂存区中内容提交到本地仓库git commit -m &quot;说明&quot; 切换到dev分支git checkout dev合并到本地仓库dev分支git merge 版本恢复git reset --hard &lt;commit_id&gt;git reset --hard HEAD^git reset --hard HEAD^^把本地仓库内容提交到远程仓库(推送前拉取)git push origin dev 标签: 创建标签git tag v1.0git tag -a v1.0 -m &quot;version 1.0 release&quot;为特定commit_id创建标签git tag -a v1.0 -m &quot;version 1.0 release&quot; commit_id 查看所有标签git tag查看标签下的内容git show v1.0 删除标签git tag -d v1.0git push origin :refs/tags/v1.0 推送标签git push origin v1.0git push origin --tags stash: 隐藏当前工作区内容git stash 查看隐藏工作区状态git stash list 恢复隐藏的工作区git stash applygit stash pop 其他命令: 查看历史命令git refloggit log 删除工作区文件git rm &lt;fileName&gt; 查看远程仓库信息git remote 参考资料廖雪峰的官方网站Git官方网站]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[Git]]></title>
-      <url>%2F2015%2F06%2F01%2Fgit%2F</url>
-      <content type="text"><![CDATA[linus linus在1991年创建开源linux，几年后成立linus社区linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来linus信仰开源精神 分支 远程仓库至少有两个分支master、dev,本地仓库至少有三个分支master、dev、mine在mine分支中开发、合并到dev分支、并推送到远程仓库 安装 Xcode 8.0以后集成 gitbrew install git 关联本地与远程仓库 在github或者coding或者其它创建仓库git clone git push -u origin dev若没有关联、推送不成功、根据不成功的提示进行关联 常用命令: 从远程仓库某分支拉取项目git pull origin master 查看当前分支git branch创建dev分支并与远程仓库dev分支关联切换并创建工作分支git checkout -b mine 查看仓库当前状态git status对比文件修改前后git diff &lt;fileName&gt; 把修改文件添加到暂存区git add &lt;fileName&gt;放弃添加到暂存区git checkout -- &lt;fileName&gt; 把暂存区中内容提交到本地仓库git commit -m &quot;说明&quot; 切换到dev分支git checkout dev合并到本地仓库dev分支git merge 版本恢复git reset --hard &lt;commit_id&gt;git reset --hard HEAD^git reset --hard HEAD^^把本地仓库内容提交到远程仓库(推送前拉取)git push origin dev 标签: 创建标签git tag v1.0git tag -a v1.0 -m &quot;version 1.0 release&quot;为特定commit_id创建标签git tag -a v1.0 -m &quot;version 1.0 release&quot; commit_id 查看所有标签git tag查看标签下的内容git show v1.0 删除标签git tag -d v1.0git push origin :refs/tags/v1.0 推送标签git push origin v1.0git push origin --tags stash: 隐藏当前工作区内容git stash 查看隐藏工作区状态git stash list 恢复隐藏的工作区git stash applygit stash pop 其他命令: 查看历史命令git refloggit log 删除工作区文件git rm &lt;fileName&gt; 查看远程仓库信息git remote 参考资料廖雪峰的官方网站Git官方网站]]></content>
+      <title><![CDATA[Hexo搭建技术博客]]></title>
+      <url>%2F2015%2F05%2F01%2FHexo%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[什么是Hexo?1hexo是一个快速、简洁且高效的博客框架、，支持Markdown解析与渲染文章，用Node.js编写。 安装hexo123brew install nodebrew install gitnpm install -g hexo-cli 建站123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 部署 发布123hexo cleanhexo generatehexo deploy 参考资料hoex官方网站]]></content>
     </entry>
 
     

@@ -464,6 +464,10 @@
 <blockquote>
 <p>-a all<br>-l list<br>-h humain readable<br>-t time</p>
 </blockquote>
+<p>terminal配置文件</p>
+<blockquote>
+<p>.bashrc/.zshrc</p>
+</blockquote>
 </blockquote>
 
           
@@ -799,7 +803,11 @@
 </blockquote>
 <h3 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h3><h4 id="配置zsh"><a href="#配置zsh" class="headerlink" title="配置zsh"></a>配置zsh</h4><blockquote>
 <p>安装oh-my-zsh<br><blockquote><p>sh -c “$(curl -fsSL <a href="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh</a>)”</p>
+</blockquote><br>If you come from bash you might have to change your $PATH.</p>
+<blockquote>
+<p>有上述提示、证明系统只加载了.zshrc、而没有去加载.bashrc或者.bash_profile<br><blockquote><p>export PATH=$HOME/bin:/usr/local/bin:$PATH<br>source $HOME/.bashrc<br>source $HOME/.bash_profile</p>
 </blockquote></p>
+</blockquote>
 </blockquote>
 <h3 id="ipython"><a href="#ipython" class="headerlink" title="ipython"></a>ipython</h3><h4 id="交互式python"><a href="#交互式python" class="headerlink" title="交互式python"></a>交互式python</h4><blockquote>
 <p>安装ipython<br><code>pip install ipython</code></p>

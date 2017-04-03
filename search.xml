@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[配置vscode]]></title>
       <url>%2F2016%2F07%2F03%2Fvscode%2F</url>
-      <content type="text"><![CDATA[基础开发插件Indenticator Visually highlights the current indent depth Annotator Annotate the Current File or the File Before the Commit etc 前端开发插件Beautity Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code. HTMLSnippets Type part of a snippet, press enter, and the snippet unfolds Path Intellisense Visual Studio Code plugin that autocompletes filenames. Auto rename tag Automatically rename paired HTML/XML tag, same as Visual Studio IDE does. open in browser you can open html pages with browsers you specified..option + B Markdown插件Auto-Open Markdown Preview This VS Code extension automatically shows Markdown preview whenever you open new Markdown filecmd + shift + v]]></content>
+      <content type="text"><![CDATA[基础开发插件Indenticator Visually highlights the current indent depth ESLint 统一代码风格、检测语法错误、 Annotator Annotate the Current File or the File Before the Commit etc 前端开发插件Beautity Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code. HTMLSnippets Type part of a snippet, press enter, and the snippet unfolds Path Intellisense Visual Studio Code plugin that autocompletes filenames. Auto rename tag Automatically rename paired HTML/XML tag, same as Visual Studio IDE does. open in browser you can open html pages with browsers you specified..option + B Markdown插件Auto-Open Markdown Preview This VS Code extension automatically shows Markdown preview whenever you open new Markdown filecmd + shift + v python插件Python An extension with rich support for the Python language (including Python 3.6)]]></content>
     </entry>
 
     

@@ -87,7 +87,8 @@
 
 
 
-<meta name="description" content="计算机启动顺序
+<meta name="description" content="linux基础
+计算机启动顺序
 
 主板 –&amp;gt; bootloader –&amp;gt; OS –&amp;gt; APP
 
@@ -103,12 +104,13 @@ Linux
 
 Linux is Not Unix 类unix内核（Linus Torvalds）
 
-linux的出现">
+l">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux学习之旅">
 <meta property="og:url" content="http://jingshuai_blog.com/2016/10/03/linux/index.html">
 <meta property="og:site_name" content="执念客">
-<meta property="og:description" content="计算机启动顺序
+<meta property="og:description" content="linux基础
+计算机启动顺序
 
 主板 –&amp;gt; bootloader –&amp;gt; OS –&amp;gt; APP
 
@@ -124,11 +126,12 @@ Linux
 
 Linux is Not Unix 类unix内核（Linus Torvalds）
 
-linux的出现">
-<meta property="og:updated_time" content="2017-04-03T23:11:30.000Z">
+l">
+<meta property="og:updated_time" content="2017-04-04T00:08:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux学习之旅">
-<meta name="twitter:description" content="计算机启动顺序
+<meta name="twitter:description" content="linux基础
+计算机启动顺序
 
 主板 –&amp;gt; bootloader –&amp;gt; OS –&amp;gt; APP
 
@@ -144,7 +147,7 @@ Linux
 
 Linux is Not Unix 类unix内核（Linus Torvalds）
 
-linux的出现">
+l">
 
 
 
@@ -456,7 +459,7 @@ linux的出现">
 
       
         <hr>
-<blockquote>
+<h3 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a>linux基础</h3><blockquote>
 <p>计算机启动顺序</p>
 <blockquote>
 <p>主板 –&gt; bootloader –&gt; OS –&gt; APP</p>
@@ -498,17 +501,31 @@ linux的出现">
 <blockquote>
 <p>命令使用手册</p>
 </blockquote>
+</blockquote>
+<h3 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h3><blockquote>
 <p>linux命令</p>
 <blockquote>
-<p>date<br>history<br>clear<br>which pwd ls<br>cd change directory<br>cd .<br>cd ..<br>cd ~<br>du disk usage<br>du -sh<br>cat<br>cat -n syslog<br>less -n syslog<br>head -n syslog<br>tail -n syslog<br>touch<br>mkdir -p one/two/three<br>cp fileName newFileName<br>cp fileName ../<br>cp *.txt ../<br>mv fileName ../<br>mv fileName newFileName<br>rm fileName<br>rm -rf dir (force recusion)<br>sudo su  切换到root身份、ubuntu系统默认不让以root身份运行<br>adduser<br>passwd<br>deluser<br>usermod<br>chown userName fileName<br>-rwxrwxrwx   drw-r–rw-<br>chmod u+rx file.txt</p>
+<p>date<br>history<br>clear<br>which pwd ls<br>cd change directory<br>cd .<br>cd ..<br>cd ~<br>du disk usage<br>du -sh<br>cat<br>cat -n syslog<br>less -n syslog<br>head -n syslog<br>tail -n syslog<br>touch<br>mkdir -p one/two/three<br>cp fileName newFileName<br>cp fileName ../<br>cp *.txt ../<br>mv fileName ../<br>mv fileName newFileName<br>rm fileName<br>rm -rf dir (force recusion)<br>sudo su  切换到root身份、ubuntu系统默认不让以root身份运行<br>adduser<br>passwd<br>deluser<br>usermod<br>chown userName fileName<br>-rwxrwxrwx   drw-r–rw-<br>chmod u+rx file.txt<br>创建别名<br>alias ll=’ls -lh’</p>
 </blockquote>
 <p>linux参数</p>
 <blockquote>
-<p>-a all<br>-l list<br>-h humain readable<br>-t time</p>
+<p>-a all<br>-l list<br>-h humain readable<br>-t time<br>whatis apt-get</p>
 </blockquote>
+</blockquote>
+<h3 id="配置终端"><a href="#配置终端" class="headerlink" title="配置终端"></a>配置终端</h3><blockquote>
 <p>terminal配置文件</p>
 <blockquote>
-<p>.bashrc/.zshrc</p>
+<p>.bashrc<br>.bash_profile<br>.bash_profile需要登录才可配置无图形界面的终端、且会调用.bashrc、故配置了.bashrc文件、也相当于间接于配置了.bash_profile</p>
+</blockquote>
+</blockquote>
+<h3 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h3><blockquote>
+<p>ubuntu包管理工具</p>
+<blockquote>
+<p>apt-get install git<br>apt-get autoremove git<br>apt-cache search git<br>apt-get upgrade  #更新安装的软件<br>apt-get update #更新apt-get这个工具</p>
+</blockquote>
+<p>mac包管理工具</p>
+<blockquote>
+<p>brew install git<br>brew uninstall git</p>
 </blockquote>
 </blockquote>
 
@@ -626,8 +643,17 @@ linux的出现">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/IMG_7998.JPG"
@@ -709,6 +735,22 @@ linux的出现">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#linux基础"><span class="nav-number">1.</span> <span class="nav-text">linux基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linux命令"><span class="nav-number">2.</span> <span class="nav-text">linux命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置终端"><span class="nav-number">3.</span> <span class="nav-text">配置终端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#包管理工具"><span class="nav-number">4.</span> <span class="nav-text">包管理工具</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

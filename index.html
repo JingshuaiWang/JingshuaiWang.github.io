@@ -414,7 +414,7 @@
         
           
             <hr>
-<blockquote>
+<h3 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a>linux基础</h3><blockquote>
 <p>计算机启动顺序</p>
 <blockquote>
 <p>主板 –&gt; bootloader –&gt; OS –&gt; APP</p>
@@ -456,17 +456,31 @@
 <blockquote>
 <p>命令使用手册</p>
 </blockquote>
+</blockquote>
+<h3 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h3><blockquote>
 <p>linux命令</p>
 <blockquote>
-<p>date<br>history<br>clear<br>which pwd ls<br>cd change directory<br>cd .<br>cd ..<br>cd ~<br>du disk usage<br>du -sh<br>cat<br>cat -n syslog<br>less -n syslog<br>head -n syslog<br>tail -n syslog<br>touch<br>mkdir -p one/two/three<br>cp fileName newFileName<br>cp fileName ../<br>cp *.txt ../<br>mv fileName ../<br>mv fileName newFileName<br>rm fileName<br>rm -rf dir (force recusion)<br>sudo su  切换到root身份、ubuntu系统默认不让以root身份运行<br>adduser<br>passwd<br>deluser<br>usermod<br>chown userName fileName<br>-rwxrwxrwx   drw-r–rw-<br>chmod u+rx file.txt</p>
+<p>date<br>history<br>clear<br>which pwd ls<br>cd change directory<br>cd .<br>cd ..<br>cd ~<br>du disk usage<br>du -sh<br>cat<br>cat -n syslog<br>less -n syslog<br>head -n syslog<br>tail -n syslog<br>touch<br>mkdir -p one/two/three<br>cp fileName newFileName<br>cp fileName ../<br>cp *.txt ../<br>mv fileName ../<br>mv fileName newFileName<br>rm fileName<br>rm -rf dir (force recusion)<br>sudo su  切换到root身份、ubuntu系统默认不让以root身份运行<br>adduser<br>passwd<br>deluser<br>usermod<br>chown userName fileName<br>-rwxrwxrwx   drw-r–rw-<br>chmod u+rx file.txt<br>创建别名<br>alias ll=’ls -lh’</p>
 </blockquote>
 <p>linux参数</p>
 <blockquote>
-<p>-a all<br>-l list<br>-h humain readable<br>-t time</p>
+<p>-a all<br>-l list<br>-h humain readable<br>-t time<br>whatis apt-get</p>
 </blockquote>
+</blockquote>
+<h3 id="配置终端"><a href="#配置终端" class="headerlink" title="配置终端"></a>配置终端</h3><blockquote>
 <p>terminal配置文件</p>
 <blockquote>
-<p>.bashrc/.zshrc</p>
+<p>.bashrc<br>.bash_profile<br>.bash_profile需要登录才可配置无图形界面的终端、且会调用.bashrc、故配置了.bashrc文件、也相当于间接于配置了.bash_profile</p>
+</blockquote>
+</blockquote>
+<h3 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h3><blockquote>
+<p>ubuntu包管理工具</p>
+<blockquote>
+<p>apt-get install git<br>apt-get autoremove git<br>apt-cache search git<br>apt-get upgrade  #更新安装的软件<br>apt-get update #更新apt-get这个工具</p>
+</blockquote>
+<p>mac包管理工具</p>
+<blockquote>
+<p>brew install git<br>brew uninstall git</p>
 </blockquote>
 </blockquote>
 
@@ -802,8 +816,12 @@
 <p>安装iterm2<br><code>brew cask install iterm2</code></p>
 </blockquote>
 <h3 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h3><h4 id="配置zsh"><a href="#配置zsh" class="headerlink" title="配置zsh"></a>配置zsh</h4><blockquote>
-<p>安装oh-my-zsh<br><blockquote><p>sh -c “$(curl -fsSL <a href="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh</a>)”</p>
-</blockquote><br>If you come from bash you might have to change your $PATH.</p>
+<p>安装oh-my-zsh</p>
+</blockquote>
+<blockquote><p>sh -c “$(curl -fsSL <a href="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh</a>)”</p>
+</blockquote>
+<blockquote>
+<p>If you come from bash you might have to change your $PATH.</p>
 <blockquote>
 <p>有上述提示、证明系统只加载了.zshrc、而没有去加载.bashrc或者.bash_profile<br><blockquote><p>export PATH=$HOME/bin:/usr/local/bin:$PATH<br>source $HOME/.bashrc<br>source $HOME/.bash_profile</p>
 </blockquote></p>
@@ -819,6 +837,7 @@
 <p>安装mongodb<br><code>brew install mongodb</code><br><code>mongodb</code><br><code>use admin</code><br><code>db.shutdownServer()</code><br><code>brew cask install robomongo</code></p>
 </blockquote>
 <h3 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h3><h4 id="内存级数据库存储、交互速度非常快、键值对形式存储"><a href="#内存级数据库存储、交互速度非常快、键值对形式存储" class="headerlink" title="内存级数据库存储、交互速度非常快、键值对形式存储"></a>内存级数据库存储、交互速度非常快、键值对形式存储</h4><p><code>brew install redis</code><br><code>redis-server</code><br><code>redis-cli</code></p>
+<p>TO:// 引用较长代码段时、出现空格较大bug</p>
 
           
         

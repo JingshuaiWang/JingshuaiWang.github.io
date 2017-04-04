@@ -981,7 +981,10 @@
         
           
             <h3 id="创建虚拟开发环境"><a href="#创建虚拟开发环境" class="headerlink" title="创建虚拟开发环境"></a>创建虚拟开发环境</h3><ol>
-<li>安装pyenv<br><code>brew install pyenv</code></li>
+<li>安装pyenv<blockquote>
+<p>brew为mac包管理工具、若是用Ubuntu系统、用apt-get<br><code>brew install pyenv</code></p>
+</blockquote>
+</li>
 <li>安装pyenv-virtual<br><code>brew install ptenv-virtual</code></li>
 <li>设置pyenv自动激活<br><code>echo &#39;eval &quot;$(pyenv virtualenv-init -)&quot;&#39; &gt;&gt; ~/.zshrc</code></li>
 <li>创建virtualenv<br><code>pyenv virtualenv 2.7.13 venv_django</code></li>

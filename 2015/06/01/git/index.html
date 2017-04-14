@@ -107,7 +107,7 @@ linus在1991年创建开源linux，几年后成立linus社区linus用了两个�
 
 安装
 Xcode 8.0以后集成 gitbrew instal">
-<meta property="og:updated_time" content="2017-04-01T14:03:35.000Z">
+<meta property="og:updated_time" content="2017-04-13T10:49:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="linus
@@ -464,11 +464,11 @@ Xcode 8.0以后集成 gitbrew instal">
 </blockquote>
 <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令:"></a>常用命令:</h3><blockquote>
 <p>从远程仓库某分支拉取项目<br><code>git pull origin master</code></p>
-<p>查看当前分支<br><code>git branch</code><br>创建dev分支并与远程仓库dev分支关联<br>切换并创建工作分支<br><code>git checkout -b mine</code></p>
+<p>查看当前分支<br><code>git branch</code><br>创建dev分支并与远程仓库dev分支关联<br><code>git branch dev</code><br><code>git push origin dev</code><br>切换并创建工作分支<br><code>git checkout -b mine</code><br>删除本地分支dev<br><code>git branch -d dev</code><br>删除远程分支dev<br><code>git push origin --delete dev</code></p>
 <p>查看仓库当前状态<br><code>git status</code><br>对比文件修改前后<br><code>git diff &lt;fileName&gt;</code></p>
 <p>把修改文件添加到暂存区<br><code>git add &lt;fileName&gt;</code><br>放弃添加到暂存区<br><code>git checkout -- &lt;fileName&gt;</code></p>
 <p>把暂存区中内容提交到本地仓库<br><code>git commit -m &quot;说明&quot;</code></p>
-<p>切换到dev分支<br><code>git checkout dev</code><br>合并到本地仓库dev分支<br><code>git merge</code></p>
+<p>切换到dev分支<br><code>git checkout dev</code><br>合并到本地仓库dev分支<br><code>git merge &lt;branchName&gt;</code><br>放弃合并<br><code>git merge --abort</code></p>
 <p>版本恢复<br><code>git reset --hard &lt;commit_id&gt;</code><br><code>git reset --hard HEAD^</code><br><code>git reset --hard HEAD^^</code><br>把本地仓库内容提交到远程仓库(推送前拉取)<br><code>git push origin dev</code></p>
 </blockquote>
 <h3 id="标签"><a href="#标签" class="headerlink" title="标签:"></a>标签:</h3><blockquote>
@@ -632,7 +632,7 @@ Xcode 8.0以后集成 gitbrew instal">
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -775,8 +775,6 @@ Xcode 8.0以后集成 gitbrew instal">
   
 
 
-  
-
 
 
 
@@ -798,9 +796,6 @@ Xcode 8.0以后集成 gitbrew instal">
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   

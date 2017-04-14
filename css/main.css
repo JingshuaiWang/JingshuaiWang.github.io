@@ -1726,7 +1726,7 @@ pre .javascript .function {
 .site-author-name {
   margin: 5px 0 0;
   text-align: center;
-  color: #f5f5f5;
+  color: $dark;
   font-weight: normal;
 }
 .site-description {
@@ -1803,7 +1803,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #edb958;
+  background: #91ff79;
 }
 .links-of-blogroll {
   font-size: 13px;

@@ -1653,8 +1653,7 @@ pre .javascript .function {
   bottom: 0;
   width: 0;
   z-index: 1040;
-  box-shadow: inset 0 2px 6px #000;
-  background: #f5f5f5;
+  background: $white;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
@@ -1803,7 +1802,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c213eb;
+  background: #e79440;
 }
 .links-of-blogroll {
   font-size: 13px;

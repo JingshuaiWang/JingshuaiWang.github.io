@@ -31,7 +31,7 @@
 
     
     <entry>
-      <title><![CDATA[以高效的方式进行编程开发（mac版）]]></title>
+      <title><![CDATA[配置mac]]></title>
       <url>%2F2016%2F04%2F07%2Fmac%2F</url>
       <content type="text"><![CDATA[brewbrew是mac操作系统中包管理工具、等同于Linux系统中的apt-get、yum等 mac系统自带ruby需要gcc编译器支持（xcode集成）安装brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)” 安装 brew caskbrew tap caskroom/cask pyenvpyenv是python多版本管理工具 安装pyenvbrew install pyenv安装python依赖brew install readline xz安装特定的python版本brew install 2.7.13 zsh终极shell 安装zshbrew isntall zsh iterm2终极终端 安装iterm2brew cask install iterm2 oh-my-zsh配置zsh 安装oh-my-zsh sh -c “$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)” If you come from bash you might have to change your $PATH. 有上述提示、证明系统只加载了.zshrc、而没有去加载.bashrc或者.bash_profileexport PATH=$HOME/bin:/usr/local/bin:$PATHsource $HOME/.bashrcsource $HOME/.bash_profile ipython交互式python 安装ipythonpip install ipython mysql常用关系型数据库 安装mysqlbrew install mysqlmysql.server startmysql.server stopmysql.server restart mongodb分布式文件存储的NoSQL数据库 安装mongodbbrew install mongodbmongodbuse admindb.shutdownServer()brew cask install robomongo redis内存级数据库存储、交互速度非常快、键值对形式存储brew install redisredis-serverredis-cli TO:// 引用较长代码段时、出现空格较大bug]]></content>
     </entry>

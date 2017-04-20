@@ -105,7 +105,7 @@ linus在1991年创建开源linux，几年后成立linus社区linus用了两个�
 
 安装
 Xcode 8.0以后集成 gitbrew instal">
-<meta property="og:updated_time" content="2017-04-16T11:02:56.000Z">
+<meta property="og:updated_time" content="2017-04-20T03:14:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="linus
@@ -448,9 +448,15 @@ Xcode 8.0以后集成 gitbrew instal">
 <p>Xcode 8.0以后集成 git<br><code>brew install git</code></p>
 </blockquote>
 <h3 id="关联本地与远程仓库"><a href="#关联本地与远程仓库" class="headerlink" title="关联本地与远程仓库"></a>关联本地与远程仓库</h3><blockquote>
-<p>在github或者coding或者其它创建仓库<br>git clone <respository url=""><br>git push -u origin dev<br>若没有关联、推送不成功、根据不成功的提示进行关联</respository></p>
+<p>在github或者coding或者其它创建仓库<br>git clone <respository url=""><br>git pull origin dev<br>git push -u origin dev<br>若没有关联、推送不成功、根据不成功的提示进行关联</respository></p>
 </blockquote>
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令:"></a>常用命令:</h3><blockquote>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><hr>
+<blockquote>
+<p>撤销工作区中的修改<br><code>git checkout -- filename</code><br>撤销添加到暂存区中的修改<br><code>git reset HEAD filename</code><br><code>git checkout -- filename</code><br>撤销添加到本地仓库的修改<br><code>git reset --hard filename</code><br>撤销上传到远程仓库的修改——&gt;远程仓库版本回退</p>
+</blockquote>
+<hr>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><hr>
+<h2 id="git-rm-filename"><a href="#git-rm-filename" class="headerlink" title="git rm filename"></a><code>git rm filename</code></h2><blockquote>
 <p>从远程仓库某分支拉取项目<br><code>git pull origin master</code></p>
 <p>查看当前分支<br><code>git branch</code><br>创建dev分支并与远程仓库dev分支关联<br><code>git branch dev</code><br><code>git push origin dev</code><br>切换并创建工作分支<br><code>git checkout -b mine</code><br>删除本地分支dev<br><code>git branch -d dev</code><br>删除远程分支dev<br><code>git push origin --delete dev</code></p>
 <p>查看仓库当前状态<br><code>git status</code><br>对比文件修改前后<br><code>git diff &lt;fileName&gt;</code></p>
@@ -473,7 +479,7 @@ Xcode 8.0以后集成 gitbrew instal">
 <h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h3><blockquote>
 <p>查看历史命令<br><code>git reflog</code><br><code>git log</code></p>
 <p>删除工作区文件<br><code>git rm &lt;fileName&gt;</code></p>
-<p>查看远程仓库信息<br><code>git remote</code></p>
+<p>查看远程仓库信息<br><code>git remote -v</code></p>
 </blockquote>
 <h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的官方网站</a><br><a href="https://git-scm.com" target="_blank" rel="external">Git官方网站</a></p>
 
@@ -682,7 +688,7 @@ Xcode 8.0以后集成 gitbrew instal">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#linus"><span class="nav-number">1.</span> <span class="nav-text">linus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联本地与远程仓库"><span class="nav-number">4.</span> <span class="nav-text">关联本地与远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">5.</span> <span class="nav-text">常用命令:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签"><span class="nav-number">6.</span> <span class="nav-text">标签:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他命令"><span class="nav-number">8.</span> <span class="nav-text">其他命令:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#linus"><span class="nav-number">1.</span> <span class="nav-text">linus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联本地与远程仓库"><span class="nav-number">4.</span> <span class="nav-text">关联本地与远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销修改"><span class="nav-number">5.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除文件"><span class="nav-number">6.</span> <span class="nav-text">删除文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm-filename"><span class="nav-number"></span> <span class="nav-text">git rm filename</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标签"><span class="nav-number">1.</span> <span class="nav-text">标签:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stash"><span class="nav-number">2.</span> <span class="nav-text">stash:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他命令"><span class="nav-number">3.</span> <span class="nav-text">其他命令:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>

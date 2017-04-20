@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[配置sublimeText]]></title>
+      <url>%2F2017%2F04%2F16%2FsublimeText%2F</url>
+      <content type="text"><![CDATA[安装package control安装方法 配置基础功能 AlignmentBracketHighlighterSidebarEnhancementsTerminal 前端开发 EmmetAutoprefixerHTML-CSS-JS Prettify python开发 SublimeTmplSublimeCodeIntel]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[配置chrome和Safari]]></title>
       <url>%2F2017%2F02%2F16%2Fgoogle%2F</url>
       <content type="text"><![CDATA[chrome是一款比较流行且对程序开发非常友善的浏览器。其扩展程序的使用、对于程序员开发更是事半功倍。 XPath helperJSONViewPoper BlockerMomentumChronoExtension ManagerProxy SwitchyOmega (Proxy SwitchySharp的升级版)划词翻译 safari浏览器是mac操作系统内置、响应速度快、轻量、 Translate1PasswordADBlock PlusYOUKUhtml5player 2.0 下载地址]]></content>
@@ -31,13 +38,6 @@
 
     
     <entry>
-      <title><![CDATA[配置sublime Text 3]]></title>
-      <url>%2F2016%2F05%2F16%2FsublimeT3%2F</url>
-      <content type="text"><![CDATA[安装sublime第三方包管理插件安装方法配置基础功能 AlignmentBracketHighlighterSidebarEnhancementsTerminal 前端开发 EmmetAutoprefixerHTML-CSS-JS Prettify python开发 SublimeTmplSublimeCodeIntel]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[配置mac]]></title>
       <url>%2F2016%2F04%2F07%2Fmac%2F</url>
       <content type="text"><![CDATA[brewbrew是mac操作系统中包管理工具、等同于Linux系统中的apt-get、yum等 mac系统自带ruby需要gcc编译器支持（xcode集成）安装brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)” 安装 brew caskbrew tap caskroom/cask pyenvpyenv是python多版本管理工具 安装pyenvbrew install pyenv安装python依赖brew install readline xz安装特定的python版本brew install 2.7.13 zsh终极shell 安装zshbrew isntall zsh iterm2终极终端 安装iterm2brew cask install iterm2 oh-my-zsh配置zsh 安装oh-my-zsh sh -c “$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)” If you come from bash you might have to change your $PATH. 有上述提示、证明系统只加载了.zshrc、而没有去加载.bashrc或者.bash_profileexport PATH=$HOME/bin:/usr/local/bin:$PATHsource $HOME/.bashrcsource $HOME/.bash_profile ipython交互式python 安装ipythonpip install ipython mysql常用关系型数据库 安装mysqlbrew install mysqlmysql.server startmysql.server stopmysql.server restart mongodb分布式文件存储的NoSQL数据库 安装mongodbbrew install mongodbmongodbuse admindb.shutdownServer()brew cask install robomongo redis内存级数据库存储、交互速度非常快、键值对形式存储brew install redisredis-serverredis-cli TO:// 引用较长代码段时、出现空格较大bug]]></content>
@@ -54,7 +54,7 @@
     <entry>
       <title><![CDATA[Git]]></title>
       <url>%2F2015%2F06%2F01%2Fgit%2F</url>
-      <content type="text"><![CDATA[linus linus在1991年创建开源linux，几年后成立linus社区linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来linus信仰开源精神 分支 远程仓库至少有两个分支master、dev,本地仓库至少有三个分支master、dev、mine在mine分支中开发、合并到dev分支、并推送到远程仓库 安装 Xcode 8.0以后集成 gitbrew install git 关联本地与远程仓库 在github或者coding或者其它创建仓库git clone git push -u origin dev若没有关联、推送不成功、根据不成功的提示进行关联 常用命令: 从远程仓库某分支拉取项目git pull origin master 查看当前分支git branch创建dev分支并与远程仓库dev分支关联git branch devgit push origin dev切换并创建工作分支git checkout -b mine删除本地分支devgit branch -d dev删除远程分支devgit push origin --delete dev 查看仓库当前状态git status对比文件修改前后git diff &lt;fileName&gt; 把修改文件添加到暂存区git add &lt;fileName&gt;放弃添加到暂存区git checkout -- &lt;fileName&gt; 把暂存区中内容提交到本地仓库git commit -m &quot;说明&quot; 切换到dev分支git checkout dev合并到本地仓库dev分支git merge &lt;branchName&gt;放弃合并git merge --abort 版本恢复git reset --hard &lt;commit_id&gt;git reset --hard HEAD^git reset --hard HEAD^^把本地仓库内容提交到远程仓库(推送前拉取)git push origin dev 标签: 创建标签git tag v1.0git tag -a v1.0 -m &quot;version 1.0 release&quot;为特定commit_id创建标签git tag -a v1.0 -m &quot;version 1.0 release&quot; commit_id 查看所有标签git tag查看标签下的内容git show v1.0 删除标签git tag -d v1.0git push origin :refs/tags/v1.0 推送标签git push origin v1.0git push origin --tags stash: 隐藏当前工作区内容git stash 查看隐藏工作区状态git stash list 恢复隐藏的工作区git stash applygit stash pop 其他命令: 查看历史命令git refloggit log 删除工作区文件git rm &lt;fileName&gt; 查看远程仓库信息git remote 参考资料廖雪峰的官方网站Git官方网站]]></content>
+      <content type="text"><![CDATA[linus linus在1991年创建开源linux，几年后成立linus社区linus用了两个星期时间为自己写了一个分布式版本控制系统，并流行起来linus信仰开源精神 分支 远程仓库至少有两个分支master、dev,本地仓库至少有三个分支master、dev、mine在mine分支中开发、合并到dev分支、并推送到远程仓库 安装 Xcode 8.0以后集成 gitbrew install git 关联本地与远程仓库 在github或者coding或者其它创建仓库git clone git pull origin devgit push -u origin dev若没有关联、推送不成功、根据不成功的提示进行关联 撤销修改 撤销工作区中的修改git checkout -- filename撤销添加到暂存区中的修改git reset HEAD filenamegit checkout -- filename撤销添加到本地仓库的修改git reset --hard filename撤销上传到远程仓库的修改——&gt;远程仓库版本回退 删除文件 git rm filename 从远程仓库某分支拉取项目git pull origin master 查看当前分支git branch创建dev分支并与远程仓库dev分支关联git branch devgit push origin dev切换并创建工作分支git checkout -b mine删除本地分支devgit branch -d dev删除远程分支devgit push origin --delete dev 查看仓库当前状态git status对比文件修改前后git diff &lt;fileName&gt; 把修改文件添加到暂存区git add &lt;fileName&gt;放弃添加到暂存区git checkout -- &lt;fileName&gt; 把暂存区中内容提交到本地仓库git commit -m &quot;说明&quot; 切换到dev分支git checkout dev合并到本地仓库dev分支git merge &lt;branchName&gt;放弃合并git merge --abort 版本恢复git reset --hard &lt;commit_id&gt;git reset --hard HEAD^git reset --hard HEAD^^把本地仓库内容提交到远程仓库(推送前拉取)git push origin dev 标签: 创建标签git tag v1.0git tag -a v1.0 -m &quot;version 1.0 release&quot;为特定commit_id创建标签git tag -a v1.0 -m &quot;version 1.0 release&quot; commit_id 查看所有标签git tag查看标签下的内容git show v1.0 删除标签git tag -d v1.0git push origin :refs/tags/v1.0 推送标签git push origin v1.0git push origin --tags stash: 隐藏当前工作区内容git stash 查看隐藏工作区状态git stash list 恢复隐藏的工作区git stash applygit stash pop 其他命令: 查看历史命令git refloggit log 删除工作区文件git rm &lt;fileName&gt; 查看远程仓库信息git remote -v 参考资料廖雪峰的官方网站Git官方网站]]></content>
     </entry>
 
     

@@ -47,7 +47,7 @@
     <entry>
       <title><![CDATA[配置django开发框架]]></title>
       <url>%2F2016%2F04%2F01%2Fdjango%2F</url>
-      <content type="text"><![CDATA[创建虚拟开发环境 安装pyenv brew为mac包管理工具、若是用Ubuntu系统、用apt-getbrew install pyenv 安装pyenv-virtualbrew install ptenv-virtual 设置pyenv自动激活echo &#39;eval &quot;$(pyenv virtualenv-init -)&quot;&#39; &gt;&gt; ~/.zshrc 创建virtualenvpyenv virtualenv 2.7.13 venv_django 列出所有python虚拟环境pyenv virtualenvs 激活python虚拟环境pyenv activate venv_django 安装django框架pip install django==1.8.2 安装django框架插件pip install celery==3.1.25 退出python虚拟环境pyenv deactivate venv_django 删除python虚拟环境pyenv uninstall venv_django 操作项目 创建项目django-admin startproject projectName 创建应用python manage.py startapp appName 配置settings.py` 初始化应用、模板、数据库、时区、语言、静态文件、中间件、 配置urls.py 创建模型类 注册模型类 生成迁移python manage.py makemigrations 执行迁移python manage.py migrate 运行django内置服务器python manage.py runserver]]></content>
+      <content type="text"><![CDATA[创建虚拟开发环境 安装pyenv brew为mac包管理工具、若是用Ubuntu系统、用apt-getbrew install pyenv 安装pyenv-virtual 2.1 &gt; brew install pyenv-virtual 2.2 &gt; echo &#39;eval &quot;$(pyenv virtualenv-init -)&quot;&#39; &gt;&gt; ~/.zshrc 创建virtualenvpyenv virtualenv 2.7.13 venv_django 列出所有python虚拟环境pyenv virtualenvs 激活python虚拟环境pyenv activate venv_django 安装django框架pip install django==1.8.2 安装django框架插件pip install celery==3.1.25 退出python虚拟环境pyenv deactivate venv_django 删除python虚拟环境pyenv uninstall venv_django 操作项目 创建项目django-admin startproject projectName 创建应用python manage.py startapp appName 配置settings.py` 初始化应用、模板、数据库、时区、语言、静态文件、中间件、 配置urls.py 创建模型类 注册模型类 生成迁移python manage.py makemigrations 执行迁移python manage.py migrate 运行django内置服务器python manage.py runserver]]></content>
     </entry>
 
     

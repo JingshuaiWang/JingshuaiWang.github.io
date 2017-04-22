@@ -17,6 +17,13 @@
 
     
     <entry>
+      <title><![CDATA[在ubuntu上搭建ftp服务器]]></title>
+      <url>%2F2016%2F10%2F22%2Fftp-ubuntu%2F</url>
+      <content type="text"><![CDATA[安装vsftpdsudo apt-get install vsftpd 修改配置文件sudo vim /etc/vsftpd.conf 12345678910不允许匿名用户浏览和下载anonymous_enable=NO#接受本地用户local_enable=YES#允许上传write_enable=YES#用户只能访问限制的目录chroot_local_user=YES#允许匿名用户创建目录文件anon_mkdir_write_enable=YES]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[linux学习之旅]]></title>
       <url>%2F2016%2F10%2F03%2Flinux%2F</url>
       <content type="text"><![CDATA[linux基础 计算机启动顺序 主板 –&gt; bootloader –&gt; OS –&gt; APP GNU GNU is Not Unix 是免费自由的操作系统（Richard Stallman） GCC GNU Compiler Collection GNU编译器集合 Linux Linux is Not Unix 类unix内核（Linus Torvalds） linux的出现对GNU的影响 GNU开创了一些unix的外围软件如GCC等、但是没有自己的内核、linux的出现完美解决了这个问题 ubuntu linux的一个发行版本、是debian的后继分支ubuntu server + unity = ubuntu desktop 文件系统与分区 每个分区只有一个文件系统、选择mac安装ubuntu系统的话、不用考虑分区与文件系统问题、 tty TTY是TeleTYpe的一个缩写、电传打字机、通过串行线用打印机键盘阅读和发送信息的工具tty0 是虚拟终端的别名、tty1-tty6为虚拟终端 命令行提示符 提示在后面输入命令$ :普通用户# :超级用户~ :当前所在目录 时区CST:美国中部时区UTC:世界标准时区CEST:欧洲中部时区GMT:格林尼治时区、http协议中传送时间的变准时区 manual 命令使用手册 linux命令 linux命令 datehistoryclearwhich pwd lscd change directorycd .cd ..cd ~du disk usagedu -shcatcat -n syslogless -n sysloghead -n syslogtail -n syslogtouchmkdir -p one/two/threecp fileName newFileNamecp fileName ../cp *.txt ../mv fileName ../mv fileName newFileNamerm fileNamerm -rf dir (force recusion)sudo su 切换到root身份、ubuntu系统默认不让以root身份运行adduserpasswddeluserusermodchown userName fileName-rwxrwxrwx drw-r–rw-chmod u+rx file.txt创建别名alias ll=’ls -lh’ linux参数 -a all-l list-h humain readable-t timewhatis apt-get 配置终端 terminal配置文件 .bashrc.bash_profile.bash_profile需要登录才可配置无图形界面的终端、且会调用.bashrc、故配置了.bashrc文件、也相当于间接于配置了.bash_profile 包管理工具 ubuntu包管理工具 apt-get install gitapt-get autoremove gitapt-cache search gitapt-get upgrade #更新安装的软件apt-get update #更新apt-get这个工具 mac包管理工具 brew install gitbrew uninstall git]]></content>

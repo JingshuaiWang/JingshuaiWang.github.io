@@ -45,6 +45,13 @@
 
     
     <entry>
+      <title><![CDATA[python_re]]></title>
+      <url>%2F2016%2F05%2F25%2Fpython-re%2F</url>
+      <content type="text"><![CDATA[python正则表达式（常用）1、匹配元字符 . 匹配任意除换行符”\n”以外的字符^ 匹配行首$ 匹配行尾\ 转义字符[] 字符集| 可选项\d 数字[0-9]\D 非数字\s 空白字符\S 非空白字符\w 单词字符\W 非单词字符() 分组字符 2、重复元字符 重复0次或者N次 重复1次或者N次? 重复0次或者N次{m,n} 至少m次、至多n次3、正则表达式re模块基本使用12345678910111213141516171819202122232425262728In [190]: import reIn [191]: pattern = re.compile(r&quot;([a-z]+) ([a-z]+)&quot;,re.I)In [192]: m = pattern.match(&quot;Hello World&quot;)In [193]: print m&lt;_sre.SRE_Match object at 0x109a8dbe0&gt;In [194]: m.group(0)Out[194]: &apos;Hello World&apos;In [195]: m.group(1)Out[195]: &apos;Hello&apos;In [196]: m.group(2)Out[196]: &apos;World&apos;In [197]: m.groups()Out[197]: (&apos;Hello&apos;, &apos;World&apos;)In [198]: m.group(3)---------------------------------------------------------------------------IndexError Traceback (most recent call last)&lt;ipython-input-198-71a2c7935517&gt; in &lt;module&gt;()----&gt; 1 m.group(3)IndexError: no such group 除match方法外、还有search()、findall()、finditer()、split()、sub()等方法、其用法大致类似、一般情况下会优先选用re.compile()方法、而不是直接匹配、这样做可以避免多次编译、提升效率。注意、python的re模块的匹配格式属于贪婪模式]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[配置mac]]></title>
       <url>%2F2016%2F04%2F07%2Fmac%2F</url>
       <content type="text"><![CDATA[brewbrew是mac操作系统中包管理工具、等同于Linux系统中的apt-get、yum等 mac系统自带ruby需要gcc编译器支持（xcode集成）安装brew/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)” 安装 brew caskbrew tap caskroom/cask pyenvpyenv是python多版本管理工具 安装pyenvbrew install pyenv安装python依赖brew install readline xz安装特定的python版本brew install 2.7.13 zsh终极shell 安装zshbrew isntall zsh iterm2终极终端 安装iterm2brew cask install iterm2 oh-my-zsh配置zsh 安装oh-my-zsh sh -c “$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)” If you come from bash you might have to change your $PATH. 有上述提示、证明系统只加载了.zshrc、而没有去加载.bashrc或者.bash_profileexport PATH=$HOME/bin:/usr/local/bin:$PATHsource $HOME/.bashrcsource $HOME/.bash_profile ipython交互式python 安装ipythonpip install ipython mysql常用关系型数据库 安装mysqlbrew install mysqlmysql.server startmysql.server stopmysql.server restart mongodb分布式文件存储的NoSQL数据库 安装mongodbbrew install mongodbmongodbuse admindb.shutdownServer()brew cask install robomongo redis内存级数据库存储、交互速度非常快、键值对形式存储brew install redisredis-serverredis-cli TO:// 引用较长代码段时、出现空格较大bug]]></content>

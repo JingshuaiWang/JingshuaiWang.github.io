@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[pythonsource]]></title>
+      <url>%2F2017%2F05%2F25%2Fpythonsource%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[配置sublimeText]]></title>
       <url>%2F2017%2F04%2F16%2FsublimeText%2F</url>
       <content type="text"><![CDATA[安装package control安装方法 配置基础功能 AlignmentBracketHighlighterSidebarEnhancementsTerminal 前端开发 EmmetAutoprefixerHTML-CSS-JS Prettify python开发 SublimeTmplSublimeCodeIntel]]></content>

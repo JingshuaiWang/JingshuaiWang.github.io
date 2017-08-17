@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[report]]></title>
       <url>%2F2017%2F08%2F17%2Freport%2F</url>
-      <content type="text"><![CDATA[储备的知识架构xCAT、GPFS、LSF、NIS、RSH、SSH、NFS、VIM、shell、IOZONE、NC、kickstart、DHCP、http、ftp、tftp、NTP、FHS 掌握的实战技能点 —— INSTALL OScmm端口安装linuxkickstart 分发操作系统xCAT 分发操作系统CD/USB 安装操作系统—— PHYSICAL安装 switch安装 PDU了解 PCI了解3100工作站（可为其安装windows操作系统并激活、安装SOL server数据库）了解3650机架式服务器了解刀箱以及刀片服务器、并会实施向GPFS集群中添加两台主机（物理环境下实施） 目前掌握的hpc架构I/O节点(GPFS/NFS)、MGT节点(xCAT)、账户节点(NIS)、job调度节点(LSF)、LOGIN节点(控制用户的登录) 等等节点以及交换机或其它普通节点 备注 LIM、PIM、RES、SBD、MBD – PIM(mbtachd\mbschd\sbachd)六大组件(license schdule\RTM\PAC\progress manager)]]></content>
+      <content type="text"><![CDATA[储备的知识架构xCAT、GPFS、LSF、NIS、RSH、SSH、NFS、VIM、shell、IOZONE、NC、kickstart、DHCP、http、ftp、tftp、NTP、FHS 掌握的实战技能点 —— INSTALL OScmm端口安装linuxkickstart 分发操作系统xCAT 分发操作系统CD/USB 安装操作系统—— PHYSICAL安装 switch安装 PDU了解 PCI了解3100工作站（可为其安装windows操作系统并激活、安装SOL server数据库）了解3650机架式服务器了解刀箱以及刀片服务器、并会实施向GPFS集群中添加两台主机（物理环境下实施） 目前掌握的hpc架构I/O节点(GPFS/NFS)、MGT节点(xCAT)、账户节点(NIS)、job调度节点(LSF)、LOGIN节点(控制用户的登录) 等等节点以及交换机或其它普通节点 备注 LIM、PIM、RES、SBD、MBD – PIM(mbtachd\mbschd\sbachd)常用附件(license schdule\RTM\PAC\progress manager)]]></content>
     </entry>
 
     
